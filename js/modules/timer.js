@@ -1,5 +1,5 @@
-function timer() {
-    const deadLine = '2023-04-21';  // если будет input data то вернется такая строка
+function timer(id, deadline) {
+    // const deadLine = '2023-04-21';  // если будет input data то вернется такая строка
 
     function getTimeRamaining(endtime) {
         let days, hours, minutes, seconds;
@@ -58,7 +58,7 @@ function timer() {
         }
     }
 
-    setClock('.timer', deadLine);
+    setClock(id, deadline);
 }
 
-module.exports = timer;
+export default timer;
